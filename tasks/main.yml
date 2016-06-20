@@ -1,4 +1,18 @@
 ---
+- name: signing key is installed
+  apt_key:
+    url: https://packages.elastic.co/GPG-KEY-elasticsearch
+
+- name: apt HTTPS transport is installed
+  apt:
+    name: apt-transport-https
+    state: latest
+
+- name: apt repository is installed
+  apt_repository:
+    repo: 'deb https://packages.elastic.co/elasticsearch/2.x/debian stable main'
+    update_cache: yes
+
 - name: elasticsearch package is installed
   apt:
     name: elasticsearch
