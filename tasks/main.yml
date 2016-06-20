@@ -1,7 +1,7 @@
 ---
 - name: elasticsearch package is installed
   apt:
-    name: elasicsearch
+    name: elasticsearch
     state: latest
 
 - name: elasticsearch service is enabled and started
