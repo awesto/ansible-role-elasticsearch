@@ -2,6 +2,7 @@
 - name: signing key is installed
   apt_key:
     url: https://packages.elastic.co/GPG-KEY-elasticsearch
+    id: D88E42B4
 
 - name: apt HTTPS transport is installed
   apt:
