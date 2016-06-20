@@ -1,1 +1,11 @@
 ---
+- name: elasticsearch package is installed
+  apt:
+    name: elasicsearch
+    state: latest
+
+- name: elasticsearch service is enabled and started
+  service:
+    name: elasicsearch
+    state: started
+    enabled: true
