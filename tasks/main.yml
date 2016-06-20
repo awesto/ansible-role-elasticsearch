@@ -6,6 +6,6 @@
 
 - name: elasticsearch service is enabled and started
   service:
-    name: elasicsearch
+    name: elasticsearch
     state: started
     enabled: true
