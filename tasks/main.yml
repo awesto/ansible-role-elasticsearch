@@ -11,7 +11,7 @@
 
 - name: apt repository is installed
   apt_repository:
-    repo: 'deb deb https://artifacts.elastic.co/packages/5.x/apt stable main'
+    repo: 'deb https://artifacts.elastic.co/packages/5.x/apt stable main'
     update_cache: yes
 
 - name: java is installed
